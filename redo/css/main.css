@@ -1,0 +1,65 @@
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.question.invalid {
+  background-color: #ffdddd;
+  border: 2px solid #ff0000;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Style the buttons: */
+.buttonbox {
+  overflow:auto;
+}
+
+.buttons {
+  float:right;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  margin: 5px;
+}
+progress::-webkit-progress-bar {
+  background: #ccc;
+  box-shadow: inset 0px 0px 10px 5px #aaa;
+  border-radius: 20px;
+}
+progress::-webkit-progress-value {
+  background-image: #25F;
+  border-radius: 20px;
+}
+progress::before {
+  content: attr(value);
+  position: relative;
+  left: attr(value)%;
+  display: block;
+  margin: 5px;
+  font: caption;
+  font-size: 20px;
+  color: #000;
+}

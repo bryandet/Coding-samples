@@ -1,0 +1,56 @@
+<!doctype html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Riverbed Coding Exercise</title>
+        <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+
+<form id="regForm" method="POST" action="">
+
+<h1>Riverbed Coding Exercise</h1>
+
+<!-- One "tab" for each step in the form (in this case two, but this is scalable: -->
+<div class="tab">Screen 1
+  <p><input id="uname" class="question" placeholder="Username..."></p>
+  <p><input id="emailAdd" class="question" placeholder="Email Address..."></p>
+</div>
+
+<div class="tab">Screen 2
+  <p><input id="numberCent" class="question" placeholder="Enter integer 1-100..."></p> 
+     <select id="selectWisely" class="question" name="selectBox">
+      <option value="" selected>I am not ready to submit my information</option> 
+      <option value="confirmReady" name="confirmation">I am ready to submit my information</option>
+    </select>
+</div>
+
+<div class="buttonBox">
+  <div class="buttons">
+    <button type="button" id="prevBtn">Previous</button>
+    <button type="button" id="cancBtn">Cancel</button>
+    <button type="button" id="nextBtn">Next</button>
+  </div>
+</div>
+
+<progress id="progressBar" value="0" max="100"></progress>
+
+
+</form>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
